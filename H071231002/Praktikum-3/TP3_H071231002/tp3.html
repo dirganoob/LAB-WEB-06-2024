@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-danger navbar-dark fixed-top py-2">     
+        <div class="container">
+            <a class="navbar-brand py-0" href="#">
+                <img src="logo.png" alt="Bootstrap" height="50">
+            </a>
+            <a class="navbar-brand" href="#">Grand Toserba Makassar</a>
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" aria-current="page" href="#about">About</a>
+                    <a class="nav-link active" href="#produk">Produk</a>
+                    <a class="nav-link active" href="#lokasi">Location</a>
+                    <a class="nav-link active" href="#form">Shoping</a>
+                    <a class="nav-link active" href="#review">Review</a>
+                  </div>
+            </div>
+        </div>
+    </nav>
+
+   
+    <div class="container-fluid px-0 pt-3 mt-5 bg-black" id="header" style="height: auto;">
+        <div class="card text-bg-dark"  id="card" style="height: fit-content;">
+            <a class="" href="#">
+                <img src="header.jpg" class="img-fluid" alt="Bootstrap" width="100%">
+            </a>
+            <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center align-items-sm-start text-center text-sm-start p-3">
+                <h3>Jangan Takut Dompet Kosong</h3>
+                <h1>Saatnya Belanja di Grand Toserba Makassar</h1>
+                <h2>Murah, Berkualitas, Lengkap</h2>
+                <a class="btn btn-danger" href="#form">Belanja Sekarang</a>
+            </div>
+        </div>
+    </div>
+    
+
+    <section id="about">
+        <div class="container my-5 py-5">
+            <div class="row justify-content-md-center align-items-md-center">
+                <div class="col-md-4">
+                    <div class="card bg-danger">
+                        <img src="logo.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-7 ms-4">
+                    <h3 class="mt-4">Belanja Termurah? Grand Toserba Solusinya.</h3><br>
+                    <p>
+                        Grand Toserba Makassar hadir sebagai tempat belanja kebutuhan rumah terlengkap dengan harga yang super terjangkau dengan kualitas yang tentunya terbaik untuk memenuhi semua kebutuhan keluarga dan rumah Anda. Dengan pilihan produk yang sangat beragam, mulai dari kebutuhan rumah tangga, fashion, elektronik, furniture, pecah belah, alat listrik, kosmetik, hingga makanan dan minuman. <br><br>
+                        Grand Toserba akan selalu memastikan pelanggan dapat menemukan apa pun yang mereka butuhkan di tempat kami. Kunjungi Grand Toserba sekarang dan rasakan pengalaman berbelanja yang nyaman dan terjangkau dengan berbagai promo menarik setiap hari!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="produk">
+        <div class="container-fluid text-center p-5 bg-light">
+            <h3 class="mb-5">Produk Kami</h3>
+            <div class="row fs-5">
+                <div class="col-md-3">
+                    <img src="fashion.jpg" width="100%">
+                    <p>Fashion</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="elektronik.jpg" width="100%">
+                    <p>Elektronik</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="skincare.jpg" width="100%">
+                    <p>Skincare</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="pecahnbelah.jpg" width="100%">
+                    <p>Pecah Belah</p>
+                </div>
+              </div>
+            <div class="row fs-5">
+                <div class="col-md-3">
+                    <img src="furniture.jpg" width="100%">
+                    <p>Furniture</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="alatlistrik.jpg" width="100%">
+                    <p>Alat Listrik</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="supermarket.jpg" width="100%">
+                    <p>Super Market</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="atk.jpg" width="100%">
+                    <p>Alat Tulis Kantor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="lokasi">
+        <div class="container-fluid text-center align-items-center my-5 p-5">
+            <h3>Lokasi Kami</h3>
+            <div class="row">
+                <div class="col-md-4 g-5">
+                    <div class="card">
+                        <img src="gt-pengayoman.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">Grand Toserba Pengayoman<br>Jl. Pengayoman, Pandang, Kec. Panakkukang, Kota Makassar, Sulawesi Selatan</p>
+                            <a class="btn btn-danger" href="https://maps.app.goo.gl/BwtP19B5uC8AKVjZ7" role="button">Kunjungi Kami</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 g-5">
+                    <div class="card">
+                        <img src="gt-hertasning.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">Grand Toserba Hertasning Baru<br>Jl. Tun Abdul Razak, Paccinongang, Kec. Somba Opu, Kabupaten Gowa, Sulawesi Selatan</p>
+                            <a class="btn btn-danger" href="https://maps.app.goo.gl/eTDEiuAGRxmSRjjW6" role="button">Kunjungi Kami</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 g-5">
+                    <div class="card">
+                        <img src="gt-tanjung.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">Grand Toserba Tanjung Bunga<br>Jl. Metro Tj. Bunga No.16, Tj. Merdeka, Kec. Tamalate, Kota Makassar, Sulawesi Selatan</p>
+                            <a class="btn btn-danger" href="https://maps.app.goo.gl/aqSf33Sf4MakXiQZ6" role="button">Kunjungi Kami</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="form">
+        <div class="container bg-danger p-4 text-light mb-5">
+            <h3 class="text-center">Saatnya Berbelanja</h3>
+            <div class="mb-3">
+                <label class="form-label">Nama</label>
+                <input type="text" class="form-control" placeholder=" Masukkan Nama Anda">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="email">Email</label>
+                <input type="email" class="form-control" placeholder="Masukkan Email Anda" id="email">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">No. Telepon</label>
+                <input type="number" class="form-control" placeholder="Masukkan Nomor Telepon Anda">
+            </div>
+            <div class="my-4">
+                <a class="btn btn-light" href="https://api.whatsapp.com/message/RDZM5KTPV3G7F1?autoload=1&app_absent=0" role="button">Belanja Sekarang</a>
+                <a class="btn btn-light ms-4" href="https://api.whatsapp.com/message/RDZM5KTPV3G7F1?autoload=1&app_absent=0" role="button">Cek Katalog Kami</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="review">
+        <div class="container-fluid px-4 py-5 my-5 text-center">
+            <h3>Apa Kata Pelanggan Kami...</h3>
+            <div class="row g-4 my-4">
+                <div class="col-md-3 text-start">
+                    <div class="card">
+                        <div class="card-body bg-light">
+                            <h6 class="card-subtitle mb-2 text-secondary">-Eky</h6>
+                            <p class="card-text">Tempatnya nyaman banyak pilihan barang2 yang mau di beli ,harganya lumayan murah parkirnya gratis Lagi.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 text-start">
+                    <div class="card">
+                        <div class="card-body bg-light">
+                            <h6 class="card-subtitle mb-2 text-secondary">-Nur Sifatullah</h6>
+                            <p class="card-text">Tersedia berbagai macam barang. Parkirannya gratis. Sarana dan prasarana memadai. Mantap👍🏻</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-start">
+                    <div class="card">
+                        <div class="card-body bg-light">
+                            <h6 class="card-subtitle mb-2 text-secondary">-Ra Riz</h6>
+                            <p class="card-text">Hampir semua kebutuhan ada,nyaman,harga banyak yg murah, kasir banyak</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-start">
+                    <div class="card">
+                        <div class="card-body bg-light">
+                            <h6 class="card-subtitle mb-2 text-secondary">-Pay Ismail</h6>
+                            <p class="card-text">Asli ini grand toserba, terlengkap di wilayah Sulsel...tersedia kebutuhan sehari2, elektronik, furniture..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3 text-start">
+                    <div class="card">
+                        <div class="card-body bg-light">
+                            <h6 class="card-subtitle mb-2 text-secondary">-Andi Edi Mursala</h6>
+                            <p class="card-text">Tempat belanja lengkap Orang tua bisa cari barang belanja anak bisa main ditempat bermain. Pokoknya belanja aman, anak aman, mobil aman.. kantong aman Krn murah hehe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-start">
+                    <div class="card">
+                        <div class="card-body bg-light">
+                            <h6 class="card-subtitle mb-2 text-secondary">-Fadhly Muhammad</h6>
+                            <p class="card-text">Jadi tempat belanja popok dan keperluan rumah tangga nomor 1 kami sih, soalnya harganya lebih murah dibandingkan tempat lainnya.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-start">
+                    <div class="card">
+                        <div class="card-body bg-light">
+                            <h6 class="card-subtitle mb-2 text-secondary">-Ichal GAMING</h6>
+                            <p class="card-text">Tempat belanja temurah dan modern,sangat rekomended sekali untuk kalangan menengah kebawah belanja disini.semuanya lengakap.ada pakaian,t4 bermain anak, elektronik,alat dapur,alat pertukangan.dan masih banyak lagi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-start">
+                    <div class="card">
+                        <div class="card-body bg-light">
+                            <h6 class="card-subtitle mb-2 text-secondary">-Andhy Khaedar</h6>
+                            <p class="card-text">Toko serba ada yg sangat lengkao mulai dari alat perabotan rumah tangga,sampai kebutuhan pokok, parkiran geratis, pelayan bagus, toilet bersih</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-danger text-white p-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-9">
+                    <img src="logo.png" alt="Bootstrap" height="150">
+                    <p>Copyright &copy; 2024GrandToserbaMKS </p>
+                </div>
+                <div class="col-md-3 mt-4">
+                    <h5>Kontak Kami</h5>
+                    <div class="row">
+                        <p>
+                            Instagram : <a href="https://www.instagram.com/grandtoserba.mks?igsh=MTFvb2c1NXhmbnlneA==" class="text-white">@grandtoserba.mks</a>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p>
+                            TikTok : <a href="https://www.tiktok.com/@grandtoserba.mks?_t=8pxp1uEIJVf&_r=1" class="text-white">@grandtoserba.mks</a>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p>
+                            Linktree : <a href="https://linktr.ee/Grand.Toserba1" class="text-white">linktr.ee/Grand.Toserba1</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
