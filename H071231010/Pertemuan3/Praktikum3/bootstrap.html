@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-2" href="#">EventFest</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active fs-5"  href="#Home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5" href="#About">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5" href="#Events">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5" href="#Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- section -->
+      <section class="text-white text-center d-flex justify-content-center align-items-center"
+      style="background-image: url('festivals.jpeg'); 
+             background-size: cover; 
+             background-position: center; 
+             height: 50vh;">
+ <div class="container">
+     <h1 class="display-4" style="font-size: 3.5rem;">Welcome to EventFest</h1>
+     <p class="lead" style="font-size: 1.5rem;">Discover amazing events near you!</p>
+     <a href="#" class="btn btn-primary btn-lg">Join Now</a>
+ </div>
+</section>
+
+<section class="about py-5" id="About">
+  <div class="container text-center">
+      <h1>About EventFest</h1>
+      <p class="lead">EventFest is the ultimate platform to explore and join exciting events happening around your city. Sign up to find the best events curated just for you.</p>
+  </div>
+</section>
+
+<!-- Card Section (Events) -->
+<div class="card-container py-4 " id="Events">
+  <div class="row d-flex justify-content-center">
+
+      <div class="col-md-4  d-flex justify-content-center mb-4">
+          <div class="card" style="width: 22rem; ">
+              <img src="1.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">COACHELLA</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4  d-flex justify-content-center mb-4">
+          <div class="card" style="width: 22rem; height: 30px; ">
+              <img src="3.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">CHIL FESTIVAL</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4  d-flex justify-content-center mb-4">
+          <div class="card" style="width: 22rem; ">
+              <img src="2.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">ELECTRO FESTIVAL</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<section class="contact py-5" id="Contact">
+  <div class="container">
+      <h2 class="text-center">Stay Connected</h2>
+      <form class="text-center"> <!-- Center the form content -->
+          <div class="col-md-6 mx-auto mb-3 mt-3"> <!-- Center the column -->
+              <input type="text" class="form-control" placeholder="Your Name">
+          </div>
+          <div class="col-md-6 mx-auto mb-3"> <!-- Center the column -->
+              <input type="email" class="form-control" placeholder="Your Email">
+          </div>
+          <div class="col-md-6 mx-auto mb-3"> <!-- Center the column -->
+              <input type="password" class="form-control" placeholder="Your Password">
+          </div>
+          <div class="col-md-6 mx-auto text-center"> <!-- Center the button -->
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+          </div>
+      </form>
+  </div>
+</section>
+
+<footer class="footer py-3 bg-dark text-light">
+  <div class="container text-center">
+  <p>Follow us on</p>
+      <p>
+          <a href="#">Facebook</a> | 
+          <a href="#">Instagram</a> | 
+          <a href="#">LinkedIn</a>
+      </p>
+      <p>&copy; 2024 EventFest. All rights reserved.</p>
+      </div>
+</footer>
+
+</body>
+</html>
