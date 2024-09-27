@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Tahoma', sans-serif;
+  line-height: 1.6;
+}
+
+.navbar {
+  position: fixed;
+  background-color: orange;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  top: 0;
+}
+
+.navbar a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  background-color: #f8f8f8;
+  margin-top: 40px;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  margin: 17px;
+  margin-left: 0;
+}
+
+.hero-text p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.hero-image img {
+  margin-top: 60px;
+  margin-left: 4%;
+  border-radius: 10px;
+}
+
+.about {
+  padding: 60px;
+  background-color: #fff;
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+.about-content {
+  display: flex;
+  gap: 4% ;
+}
+
+.about-content p { 
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.gallery {
+  padding: 60px;
+  background-color: #f8f8f8;
+}
+
+.gallery h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  max-height: 50px;
+  margin-right: 15px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 8%;
+}
+
+.footer-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-right: 8%;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    order: -1;
+    margin-bottom: 60px;
+  }
+
+  .hero-text {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr; 
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left {
+    margin-bottom: 10px;
+  }
+
+  .footer-right {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: left;
+    margin-top: 10px;
+  }
+}
