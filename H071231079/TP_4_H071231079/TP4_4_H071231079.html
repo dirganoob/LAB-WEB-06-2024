@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No. 4</title>
+</head>
+<body>
+    <script>
+        function getRandomInt() {
+            return Math.floor(Math.random() * 100) + 1; // Angka acak dari 1 hingga 100
+          }
+          
+          function guessingGame() {
+            const targetNumber = getRandomInt();
+            let attempts = 0;
+            let guess = 0;
+          
+            function getGuessInput() {
+                let guess;
+                do {
+                    guess = prompt("Tebak angka antara 1 sampai 100:");
+                    if (isNaN(guess) || guess.trim() === "") {
+                        alert("Input harus berupa angka!");
+                    }
+                } while (isNaN(guess) || guess.trim() === ""); // Ulangi hingga input angka valid
+                return parseInt(guess);
+            }
+          
+            while (guess !== targetNumber) {
+                guess = getGuessInput();
+                attempts++;
+                console.log("Tebakan kamu: " + guess);
+          
+                if (guess > targetNumber) {
+                    alert("Terlalu tinggi! Coba lagi.");
+                    console.log("Terlalu tinggi! Coba lagi.");
+                } else if (guess < targetNumber) {
+                    alert("Terlalu rendah! Coba lagi.");
+                    console.log("Terlalu rendah! Coba lagi.");
+                } else {
+                    alert("Selamat! Kamu berhasil menebak angka " + guess + " dengan benar.\nSebanyak " + attempts + " percobaan.");
+                    console.log("Selamat! Kamu berhasil menebak angka " + guess + " dengan benar.");
+                    console.log("Sebanyak " + attempts + " percobaan.");
+                }
+            }
+          }
+          
+          guessingGame();
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No. 3</title>
+</head>
+<body>
+    <script>
+        function hariMendatang(hariIni, jumlahHari) {
+            const hari = ["minggu", "senin", "selasa", "rabu", "kamis", "jumat", "sabtu"];
+            
+            const indeksHariIni = hari.indexOf(hariIni);
+          
+            if (indeksHariIni === -1) {
+              return "Hari tidak valid";
+            }
+        
+            const indeksHariMendatang = (indeksHariIni + jumlahHari) % 7;
+        
+            return hari[indeksHariMendatang];
+        }
+        
+        function getHariInput() {
+            let hariIni;
+            do {
+                hariIni = prompt("Hari ini hari apa?").toLowerCase();
+                if (!isNaN(hariIni) || hariIni.trim() === "") {
+                    alert("Input harus berupa nama hari yang valid! (contoh: Senin)");
+                }
+            } while (!isNaN(hariIni) || hariIni.trim() === "");
+            return hariIni;
+        }
+        
+        function getJumlahHariInput() {
+            let jumlahHari;
+            do {
+                jumlahHari = prompt("Kamu ingin tahu berapa hari dari hari ini?");
+                if (isNaN(jumlahHari) || jumlahHari.trim() === "") {
+                    alert("Input harus berupa angka!");
+                }
+            } while (isNaN(jumlahHari) || jumlahHari.trim() === "");
+            return parseInt(jumlahHari);
+        }
+        
+        let hariIni = getHariInput();
+        let jumlahHari = getJumlahHariInput();
+        
+        console.log("Hari ini: " + hariIni);
+        console.log(jumlahHari + " hari mendatang adalah: " + hariMendatang(hariIni, jumlahHari));
+    </script>
+</body>
+</html>

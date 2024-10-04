@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No. 2</title>
+</head>
+<body>
+    <script>
+        function getHargaInput() {
+            let harga;
+            do {
+                harga = prompt("Masukkan harga barang:");
+                if (isNaN(harga) || harga.trim() === "") {
+                    alert("Input harus berupa angka! Silakan coba lagi.");
+                }
+            } while (isNaN(harga) || harga.trim() === "");
+            return parseFloat(harga);
+        }
+          
+          let hargaBarang = getHargaInput();
+          let jenisBarang = prompt("Masukkan jenis barang (Elektronik, Pakaian, Makanan, Lainnya): ").toLowerCase();
+          
+          function discounted(hargaBarang, jenisBarang) {
+              let diskon = 0;
+              let hargaSetelahDiskon = hargaBarang;
+          
+              if (jenisBarang === "elektronik") {
+                  diskon = 10; 
+              } else if (jenisBarang === "pakaian") {
+                  diskon = 20; 
+              } else if (jenisBarang === "makanan") {
+                  diskon = 5; 
+              } else if (jenisBarang === "lainnya") {
+                  diskon = 0; 
+              }
+          
+              hargaSetelahDiskon = hargaBarang - (hargaBarang * diskon / 100);
+          
+              console.log(`Harga awal          : Rp${hargaBarang}`);
+              console.log(`Diskon              : ${diskon}%`);
+              console.log(`Harga setelah diskon: Rp${hargaSetelahDiskon}`);
+          }
+          
+          discounted(hargaBarang, jenisBarang);
+    </script>
+</body>
+</html>
