@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>no3</title>
+</head>
+<body>
+    <script>
+        function findDay(currentDay, daysAhead) {
+            // Array nama hari
+            const daysOfWeek = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+        
+            // Temukan indeks dari hari saat ini di array
+            const currentDayIndex = daysOfWeek.indexOf(currentDay);
+        
+            // Jika hari saat ini tidak valid (tidak ada di dalam array), kembalikan pesan kesalahan
+            if (currentDayIndex === -1) {
+                return "Nama hari tidak valid.";
+            }
+        
+            // Hitung indeks hari baru setelah sejumlah hari tertentu
+            const newDayIndex = (currentDayIndex + daysAhead) % 7;
+        
+            // Kembalikan nama hari yang baru
+            return daysOfWeek[newDayIndex];
+        }
+        
+        // Contoh penggunaan
+        console.log(findDay('Jumat', 1000)); 
+        
+    </script>
+</body>
+</html>
