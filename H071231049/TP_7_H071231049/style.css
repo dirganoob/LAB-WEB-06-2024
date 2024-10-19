@@ -1,0 +1,145 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('casino-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: gold;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px black;
+}
+
+.table {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: green;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+}
+
+.cards {
+    display: flex;
+}
+
+.cards img {
+    width: 100px;
+    margin: 5px;
+}
+
+.bet-section, .actions {
+    margin-top: 20px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: gold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: darkgoldenrod;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .game-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .table {
+        flex-direction: column;
+    }
+
+    .cards img {
+        width: 80px;
+    }
+}
+
+body {
+    background-color: #2f4f4f;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ffcc00;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+}
+
+.cards-container img {
+    width: 100px;
+    margin: 5px;
+}
+
+.modal-header {
+    background-color: #dc3545;
+    color: rgb(255, 255, 255);
+}
+
+.modal-body {
+    font-size: 1.2em;
+    text-align: center;
+    color: black;
+}
+
+.modal-footer {
+    justify-content: center;
+}
+
+button.btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
