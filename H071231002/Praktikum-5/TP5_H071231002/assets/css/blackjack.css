@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'Golwit';
+    src: url('golwet-golwet-svg-400.otf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Blackjack';
+    src: url('blackjack.otf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Egyptienne';
+    src: url('Egyptienne\ F\ 55\ Roman.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bronco';
+    src: url('BroncoPersonalUse.ttf') format('truetype');
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    background-color: black;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.overlay h1 {
+    font-family: 'Golwit';
+    font-size: 60px;
+}
+
+.overlay h2 {
+    color: #9c3c08;
+    font-family: 'Golwit';
+    font-size: 110px;
+}
+
+.overlay p {
+    font-family: 'Egyptienne';
+    color: #fff;
+    margin-top: -10px;
+}
+
+.overlay h3 {
+    font-family: 'Golwit';
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+.btn {
+    color: #9c3c08;
+    border: 1px solid #9c3c08;
+    background-color: #e7a434;
+    font-size: 17px;
+    font-family: 'Egyptienne';
+    width: 200px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #9c3c08;
+    border: 1px solid #9c3c08;
+    color: white;
+}
+
+.btn:active {
+    background-color: #9c3c08;
+    border: 1px solid #9c3c08;
+    color: white;
+}
+
+.btnn {
+    color: #e7a434;
+    border: 1px solid #e7a434;
+    background-color: transparent;
+    font-size: 17px;
+    font-family: 'Egyptienne';
+    width: 200px;
+    padding: 5px 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btnn:hover {
+    background-color: #9c3c08;
+    border: 1px solid #9c3c08;
+    color: white;
+}
+
+.btnn:active {
+    background-color: #9c3c08;
+    border: 1px solid #9c3c08;
+    color: white;
+}
+
+.sparkle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: rgba(255, 94, 0, 0.8);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(83, 24, 24, 0.8);
+    animation: sparkle-animation 5s infinite ease-in-out;
+}
+
+@keyframes sparkle-animation {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-500px) scale(0.5);
+        opacity: 0;
+    }
+}
