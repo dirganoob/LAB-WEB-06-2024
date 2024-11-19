@@ -1,0 +1,70 @@
+body {
+  text-align: center;
+  background-image: url(images/bg.png);
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h3, p {
+  font-size: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #084422;
+  padding: 10px;
+  width: 100%;
+  z-index: 100;
+  position: sticky; 
+  top: 0;
+}
+
+.navbar button {
+  width: 150px;
+  font-size: 16px;
+  margin: 5px;
+  color: white;
+  background-color: #0F6338;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.navbar button:hover {
+  background-color: #060606;
+}
+
+.main-content {
+  margin-top: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 50px;
+}
+
+.bot-cards img, .my-cards img {
+  width: 150px;
+  margin: 5px;
+}
+
+.sums-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 50px;
+}
+
+#my-money {
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
