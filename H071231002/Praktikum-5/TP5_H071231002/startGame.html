@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/gambar/ikon.png">
+    <title>Blackjack</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/startGame.css">
+</head>
+
+<body>
+    <div class="container-img">
+        <div class="image">
+            <img src="assets/gambar/background.png" alt="">
+            <div class="sparkles"></div>
+        </div>
+    </div>
+
+    <div class="container-fluid  text-center">
+        <div class="container">
+            <div class="overlay">
+                <h1>BLACKJACK GAME</h1>
+                <div id="bet-area">
+                    <p>Select Your Bet:</p>
+                    <img src="assets/gambar/Bet/bet-5.png" class="bet-image" data-bet="5" alt="$5 Bet">
+                    <img src="assets/gambar/Bet/bet-10.png" class="bet-image" data-bet="10" alt="$10 Bet">
+                    <img src="assets/gambar/Bet/bet-50.png" class="bet-image" data-bet="50" alt="$50 Bet">
+                    <img src="assets/gambar/Bet/bet-100.png" class="bet-image" data-bet="100" alt="$100 Bet">
+                    <img src="assets/gambar/Bet/bet-500.png" class="bet-image" data-bet="500" alt="$500 Bet">
+                    <p id="bet-display">Bet: $100</p>
+
+                    <img src="assets/gambar/Bet/bet-5.png" class="reduce-bet-image" data-bet="5" alt="Reduce $5 Bet">
+                    <img src="assets/gambar/Bet/bet-10.png" class="reduce-bet-image" data-bet="10" alt="Reduce $10 Bet">
+                    <img src="assets/gambar/Bet/bet-50.png" class="reduce-bet-image" data-bet="50" alt="Reduce $50 Bet">
+                    <img src="assets/gambar/Bet/bet-100.png" class="reduce-bet-image" data-bet="100"
+                        alt="Reduce $100 Bet">
+
+                    <!-- Kontrol Game -->
+                    <a class="nav-link" href="#deal">
+                        <div id="controls">
+                            <button id="deal-button">Deal Cards</button>
+                        </div>
+                    </a>
+                    <div id="money-display">Money: $5000</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid  text-center">
+        <div class="overlayy">
+            <h1>MATCH</h1>
+            <!-- Area Kartu Pemain -->
+            <div id="player-area">
+                <h2>Player's Hand</h2>
+                <div id="player-cards" class="card-area"></div>
+                <div id="player-score"></div>
+            </div>
+
+            <!-- Area Kartu Dealer -->
+            <div id="dealer-area">
+                <h2>Dealer's Hand</h2>
+                <div id="dealer-cards" class="card-area"></div>
+                <div id="dealer-score"></div>
+            </div>
+            
+            <div id="controls">
+                <button id="hit-button" disabled>Hit</button>
+                <button id="stay-button" disabled>Stay</button>
+            </div>
+
+            <!-- Hasil Permainan -->
+            <section id="deal">
+                <div id="result"></div>
+            </section>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
