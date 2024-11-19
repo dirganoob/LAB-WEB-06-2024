@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imam's Bakery</title>
+    <link rel="icon" href="./bread.png" type="image/icon type">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" >
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        
+        .navbar-brand {
+            font-family: 'Lobster', cursive;
+            font-size: 1.5rem;
+        }
+
+        .card-img-custom {
+            height: 500px; 
+            object-fit: cover;
+        }
+
+        .card-text.fixed-height {
+            height: 70px; 
+        }
+
+        .card {
+            transition: transform 0.3s; 
+        }
+
+        .card:hover {
+            transform: scale(1.03); 
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center ps-5" href="#hero">
+                <img src="bread.png" width="40" class="me-2">
+                Imam's Bakery
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-6 pe-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonial">Testimonial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#order">Order</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="p-5 text-center text-sm-start" style="background-color: #f5e1c0;">
+        <div class="container">
+            <div class="d-sm-flex flex-sm-row-reverse align-items-center">
+                <img src="bread_crate.png" width="450" class="img-fluid pb-4">
+                <div class="text-content">
+                    <h1 class="fw-bold display-4">
+                        Freshly Baked, Every Day!
+                    </h1>
+                    <p class="lead display-6 pb-4">
+                        Bringing you the best pastries straight from the oven.
+                    </p>
+                    <button class="btn btn-primary btn-lg px-4">ORDER NOW</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="p-5">
+        <div class="container-fluid">
+            <h1 class="text-center pb-4 fs-2 fw-bold">About Us</h1>
+            <p class="fs-5 flex-grow-1" style="text-align: justify;">Imam's Bakery didirikan dengan cinta dan dedikasi untuk menghadirkan roti berkualitas tinggi kepada masyarakat. Setiap roti yang kami buat dipanggang segar setiap hari menggunakan bahan-bahan alami terbaik, tanpa pengawet atau bahan kimia berbahaya. Kami percaya bahwa setiap gigitan harus membawa kebahagiaan, itulah mengapa kami berkomitmen untuk menjaga rasa dan kualitas yang selalu konsisten. Dengan berbagai pilihan roti, kami siap melayani berbagai kebutuhan, mulai dari sarapan pagi hingga camilan sore. Kami terus berinovasi untuk memberikan kreasi roti terbaru yang lezat dan menggugah selera. Mari, cicipi roti kami dan bagikan kebahagiaan bersama orang-orang terdekat Anda!</p>
+        </div>
+    </section>
+
+    <section id="products" class="p-5" style="background-color: #f5e1c0;">
+        <div class="container-fluid">
+            <h1 class="text-center pb-4 fs-2 fw-bold">Products</h1>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://res.cloudinary.com/dk0z4ums3/image/upload/v1630305969/attached_image/ini-alasan-konsumsi-roti-tawar-putih-sebaiknya-dibatasi.jpg" class="card-img-top card-img-custom" alt="Roti Tawar">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Roti Tawar</h5>
+                            <p class="card-text flex-grow-1">Roti tawar kami adalah pilihan sempurna untuk sarapan atau camilan. Dengan tekstur lembut dan rasa yang ringan, roti ini cocok untuk berbagai hidangan, dari sandwich hingga toast dengan selai.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://res.cloudinary.com/dk0z4ums3/image/upload/v1635785272/attached_image/alasan-mengonsumsi-roti-gandum-dan-tips-memilihnya.jpg" class="card-img-top card-img-custom" alt="Roti Gandum">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Roti Gandum</h5>
+                            <p class="card-text flex-grow-1">Roti gandum kami terbuat dari biji gandum utuh, memberikan serat lebih tinggi dan rasa yang lebih kaya. Ini adalah pilihan yang lebih sehat untuk diet sehari-hari Anda.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://www.ruangriang.co.id/wp-content/uploads/2023/08/a2faa4ab3ef187f42848e33f7901b0e3.jpg" class="card-img-top card-img-custom" alt="Roti Spesial">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Roti Spesial</h5>
+                            <p class="card-text flex-grow-1">Roti spesial kami diolah dengan resep rahasia, menghasilkan cita rasa yang unik dan lezat. Ideal untuk hidangan istimewa atau sebagai sajian untuk tamu.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxRiDBxumMcOsL_UyppwzA_FLLFoAbsBooug&s" class="card-img-top card-img-custom" alt="Roti Sourdough">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Roti Sourdough</h5>
+                            <p class="card-text flex-grow-1">Roti sourdough kami memiliki rasa asam yang khas dan tekstur yang renyah. Proses fermentasi alami memberikan aroma yang menggugah selera dan rasa yang tak terlupakan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <section id="testimonial" class="p-5 bg-light">
+        <div class="container">
+            <h1 class="text-center pb-4 fs-2 fw-bold">Testimonial</h1>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <p class="card-text">"Roti dari Imam's Bakery adalah yang terbaik! Selalu segar dan lezat. Saya selalu memesan untuk acara keluarga."</p>
+                            <h5 class="card-title">Anna S.</h5>
+                            <h6 class="text-muted">Pelanggan Setia</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <p class="card-text">"Setiap gigitan roti ini membuat saya merasa bahagia. Roti tawar dan roti gandumnya luar biasa!"</p>
+                            <h5 class="card-title">Budi R.</h5>
+                            <h6 class="text-muted">Penggemar Roti</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <p class="card-text">"Imam's Bakery selalu menjadi pilihan saya untuk sarapan. Roti mereka sangat enak dan sehat!"</p>
+                            <h5 class="card-title">Cindy L.</h5>
+                            <h6 class="text-muted">Pelanggan Bahagia</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="order" class="p-5" style="background-color: #f5e1c0;">
+        <div class="container-fluid">
+            <h1 class="text-center pb-4 fs-2 fw-bold">Order</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nama</label>
+                    <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Nomor Telepon</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Masukkan nomor telepon Anda" required>
+                </div>
+                <div class="mb-3">
+                    <label for="orderDetails" class="form-label">Detail Pesanan</label>
+                    <textarea class="form-control" id="orderDetails" rows="3" placeholder="Masukkan detail pesanan Anda" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">Kirim Pesanan</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="p-3 container-md">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex">
+                <a href="" class="p-2">
+                    <i class="h2 bi bi-instagram"></i>
+                </a>
+                <a href="" class="p-2">
+                    <i class="h2 bi bi-facebook"></i>
+                </a>
+                <a href="" class="p-2">
+                    <i class="h2 bi bi-whatsapp"></i>
+                </a>
+            </div>
+
+            <div>
+                <p class="mb-0">Copyright &copy; 2024 Tugas Praktikum 4</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

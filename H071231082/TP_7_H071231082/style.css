@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif; 
+    background-color: #f0f0f0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+    background-image: url(./bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.loginContainer { 
+    background: #fff; 
+    padding: 20px; 
+    box-shadow: 0 0 100px rgba(0,0,0,0.1); 
+    border-radius: 8px; 
+    width: 300px; 
+}
+
+.loginContainer h2 { 
+    text-align: center; 
+}
+
+.form {
+    align-items: center;
+    padding: 50px;
+    background-color: #C7B7A3;
+    width: 30%;
+    min-width: 300px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px #6D2932;
+}
+
+.formGroup {
+    margin-bottom: 15px; 
+    width: 100%; 
+}
+
+.formGroup label {
+    display: block; /* Ensures label is above input */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.formGroup input {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    box-sizing: border-box;
+}
+
+/* Login button and register button styling */
+.loginButtonDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Adds space between the buttons */
+    width: 100%;
+}
+
+/* Login button and registration button styling */
+.loginButtonDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Adds space between the buttons */
+    width: 100%;
+}
+
+button, .registerButton, .logoutButton {
+    width: 100%; 
+    padding: 10px; 
+    background-color: blue; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+.registerButton {
+    background-color: #6D2932;
+}
+
+.registerButton:hover {
+    background-color: #4a0b13;
+}
+
+.logoutButton {
+    background-color: #845a27;
+}
+
+.logoutButton:hover {
+    background-color: #845a27;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}
