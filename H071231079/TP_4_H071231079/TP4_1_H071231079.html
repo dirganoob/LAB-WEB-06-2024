@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No. 1</title>
+</head>
+<body>
+    <script>
+        function countEvenNumbers(start, end) {
+            let count = 0;
+            let bilGenap = [];
+        
+            for (let i = start; i <= end; i++) {
+                if  (i % 2 === 0) {
+                    bilGenap.push(i);
+                    count++;
+                }
+            }
+            return `${count} (${bilGenap.join(", ")})`;
+        }
+        
+        console.log(countEvenNumbers(1, 10));
+    </script>
+</body>
+</html>
